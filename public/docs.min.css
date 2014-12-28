@@ -42,4 +42,10 @@
   border-radius: 6px;
   background-color: rgb(32, 58, 89);
   font-family: lato;
+  font-color: #fff;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
