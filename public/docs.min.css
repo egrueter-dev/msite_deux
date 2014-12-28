@@ -1,0 +1,45 @@
+
+.lead {
+  margin: 0 auto 30px;
+  font-size: 40px;
+  color: #203A59;
+  font-family: 'Lato', sans-serif;
+}
+
+.lead2 {
+  margin: 0 auto 30px;
+  font-size: 20px;
+  color: #203A59;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.btn-outline-inverse {
+  color: #fff;
+  background-color: transparent;
+  border-color: #203A59;
+}
+.btn-lg, .btn-group-lg>.btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.container2 {
+
+  text-align:center;
+  padding:80px;
+  padding-top:300px;
+  /*padding-bottom:80px;*/
+  text-align:center;"
+
+}
+.btn-lg, .btn-group-lg>.btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+  background-color: rgb(32, 58, 89);
+  font-family: lato;
+}
