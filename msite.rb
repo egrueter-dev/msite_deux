@@ -1,7 +1,6 @@
-require 'sinatra'
+source 'https://rubygems.org'
 require 'bundler'
-require 'rubygems'
-
+require 'sinatra'
 get '/' do
   erb :home
 end
