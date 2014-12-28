@@ -1,2 +1,2 @@
-require './home'
+require './msite'
 run Sinatra::Application
