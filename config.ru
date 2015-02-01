@@ -1,7 +1,7 @@
 require 'bundler'
 require 'sinatra'
-#
+
 Bundler.require
 
- require './msite'
+require './msite'
 run Sinatra::Application
