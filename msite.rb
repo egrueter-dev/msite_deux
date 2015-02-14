@@ -1,30 +1,28 @@
 require 'bundler'
 require 'sinatra'
-
-configure do
-  enable :sessions
-  set :username, "Erik"
-  set :password, "Godzilla"
-end
+require 'sinatra/activerecord'
+require './config/environments' #database configuration
+require './models/model'
 
 get '/' do
+  @title = "Home"
   erb :home
 end
 
-get '/login' do
-  erb :login
-end
-
-post '/login' do
-  if params[:username] == settings.username && params[:password] == settings.password
-    session[:admin] = true
-    redirect to('/songs')
+post '/submit' do
+  @model = Model.new(params[:model])
+  if @model.save
+          redirect '/models'
   else
-    erb :login
+          "Sorry, there was an error!"
   end
 end
 
-get '/logout' do
-  session.clear
-  redirect to('/login')
+get '/index' do
+  erb :index
+end
+
+get "/models" do
+  @models = Model.all
+  erb :models
 end
